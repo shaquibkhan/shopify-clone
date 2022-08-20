@@ -14,10 +14,10 @@
     <title>Start & Grow Your E-commerce Business</title>
 </head>
 
-<body class="overflow-x-hidden">
+<body class="">
     <header class="bg-[#002d2d] md:pt-12">
         <nav style="font-family: 'Oswald', sans-serif;"
-            class="mx-auto flex flex-col md:flex-row justify-around h-[40px] text-white">
+            class="hidden md:flex flex-row justify-around h-[40px] text-white">
             <div class="flex md:gap-12 text-md font-semibold">
                 <img class="w-28 h-auto md:mt-[-16px]" src="./assets/logo.png" alt="logo">
                 <a href="">Start</a>
@@ -34,17 +34,48 @@
             </div>
         </nav>
     </header>
+    <!-- mobile -->
+    <div class="md:hidden ">
+    <div class="flex items-center">
+        <button class="outline-none mobile-menu-button">
+            <svg class="w-6 h-6 text-gray-500" x-show="!showMenu" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+    <header class="hidden mobile-menu">
+        <div class="flex flex-col text-white bg-[#002d2d]">
+            <nav>
+                <div class="flex flex-col font-semibold ml-8">
+                    <img class="w-28 h-auto md:mt-[-16px]" src="./assets/logo.png" alt="logo">
+                    <a href="">Start</a>
+                    <a href="">Sell</a>
+                    <a href="">Market</a>
+                    <a href="">Manage</a>
+                </div>
+                <div class="flex flex-col font-semibold ml-8">
+                    <a href="">Pricing</a>
+                    <a href="">Learn</a>
+                    <a href="">Log in</a>
+                    <button class="bg-[#008060] mt-4 mb-4 rounded w-36 hover:bg-[#002d2d] hover:border-2 border-[#008060]">Start Free
+                        Trial</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+</div>
     <!-- linear gradient text -->
     <div class="bg-[#002d2d] pt-12">
         <p
-            class=" hover:bg-gradient-to-r from-[#e7baf3] to-[#008060] max-w-[530px] ml-12 text-white border-2 rounded-full px-2 h-8">
-            Shopify Editions, Summer ’22 is here &nbsp; | Discover 100+ new features <i
+            class=" hover:bg-gradient-to-r from-[#e7baf3] to-[#008060] md:max-w-[530px] md:ml-12 text-white border-2 rounded-full px-2 h-8">
+            Shopify Editions, Summer ’22 is here &nbsp; | <span class="hidden md:visible">Discover 100+ new features</span> <i
                 class="fa-solid fa-arrow-right"></i></p>
     </div>
     <!-- section 1 -->
-    <section class="bg-[#002d2d]">
+    <section class="bg-[#002d2d] ">
         <div class="mx-auto flex flex-col md:flex-row gap-8">
-            <div class="flex flex-col md:flex-start gap-8 text-white md:ml-20 md:mt-32 mb-8 md:w-[640px]">
+            <div class="mt-4 flex flex-col md:flex-start gap-8 text-white md:ml-20 md:mt-32 mb-8 md:w-[640px]">
                 <h1 class="text-center text-4xl md:text-7xl md:text-left font-bold">If you can dream it, you can sell it
                     with Shopify</h1>
                 <p class="text-center md:text-2xl md:text-left">Build your business here. Take it anywhere.</p>
@@ -314,7 +345,6 @@
 
 
 
-
+<script src="./action.js"></script>
 </body>
-
 </html>
